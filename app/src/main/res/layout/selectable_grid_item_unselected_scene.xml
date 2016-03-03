@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="84dp"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_gray_bottom_right">
+
+    <View
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/selectable_grid_view_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/yellow"
+        />
+
+    <com.prototype.wishti.custom_views.TextViewWithFont
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:alpha="1.0"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        custom:ttf_file="Roboto-Medium.ttf"
+        />
+</RelativeLayout>

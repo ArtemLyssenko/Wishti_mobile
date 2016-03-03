@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/yellow</item>
+    </style>
+    
+    <style name="WishtiEditText">
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/underline_edit_text_blue_gray_background</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

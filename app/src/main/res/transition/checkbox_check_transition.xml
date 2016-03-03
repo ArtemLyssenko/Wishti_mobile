@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:transitionOrdering="together">
+    <fade android:fadingMode="fade_out" android:duration="2000">
+        <targets>
+            <target android:targetId="@+id/checkbox_button"/>
+        </targets>
+    </fade>
+    <changeBounds android:duration="300">
+        <targets>
+            <target android:targetId="@+id/checkbox_button"/>
+            <target android:targetId="@+id/checkbox_holder"/>
+        </targets>
+    </changeBounds>
+    <fade android:fadingMode="fade_in" android:duration="2000">
+        <targets>
+            <target android:targetId="@+id/checkbox_button"/>
+        </targets>
+    </fade>
+</transitionSet>

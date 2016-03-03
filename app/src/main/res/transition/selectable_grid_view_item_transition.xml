@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together" android:duration="300">
+    <changeBounds>
+    <targets>
+        <target android:targetId="@+id/selectable_grid_view_background"/>
+    </targets>
+    </changeBounds>
+    <fade android:fadingMode="fade_out">
+        <targets>
+            <target android:targetId="@+id/selectable_grid_view_background"/>
+        </targets>
+    </fade>
+    <fade android:fadingMode="fade_in">
+        <targets>
+            <target android:targetId="@+id/selectable_grid_view_background"/>
+        </targets>
+    </fade>
+</transitionSet>

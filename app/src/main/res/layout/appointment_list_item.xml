@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="50dp"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/status"
+                android:layout_width="10dp"
+                android:layout_height="10dp" android:background="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@color/blue"
+                    android:textSize="16sp" android:text="Иван Иванов"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textSize="12sp" android:text="Стрижка" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="@color/lightGray" android:text="70$" android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+        <!--<View-->
+            <!--android:id="@+id/swipe"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" android:background="@color/black"/>-->
+
+
+
+</FrameLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/border_bottom_gray_with_white_body">
+
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/icon_menu_black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <com.prototype.wishti.custom_views.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новая запись"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            custom:ttf_file="Roboto-Light.ttf"
+            />
+
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/icon_bell_black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#ededf3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:background="@drawable/border_bottom_gray_with_gray_body">
+                <com.prototype.wishti.custom_views.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:text="Выбирите клиента"
+                    android:textSize="12dp"
+                    android:layout_centerVertical="true"
+                    custom:ttf_file="Roboto-Regular.ttf"
+                    />
+
+                <View
+                    android:layout_margin="20dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/icon_client_darkgray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:background="@drawable/border_bottom_gray_with_gray_body">
+                <com.prototype.wishti.custom_views.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:text="Выбирете услугу"
+                    android:textSize="12dp"
+                    android:layout_centerVertical="true"
+                    custom:ttf_file="Roboto-Regular.ttf"
+                    />
+
+                <View
+                    android:layout_margin="20dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/icon_addsub_darkgray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:background="@drawable/border_bottom_gray_with_gray_body">
+                <com.prototype.wishti.custom_views.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Выбирите дату и время"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_centerVertical="true"
+                    custom:ttf_file="Roboto-Regular.ttf"
+                    />
+
+                <View
+                    android:layout_margin="20dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/icon_datetime_darkgray"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.prototype.wishti.custom_views.TextViewWithFont
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="28dp"
+                    android:text="Добавить коментарий"
+                    android:textSize="12dp"
+                    custom:ttf_file="Roboto-Regular.ttf"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/yellow"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

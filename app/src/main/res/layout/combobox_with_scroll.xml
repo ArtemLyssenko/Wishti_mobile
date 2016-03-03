@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/white_background_with_circle_corners_on_top" >
+
+        <com.prototype.wishti.custom_views.TextViewWithFont
+            android:id="@+id/header"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/comobox_scroll"
+        android:scrollbars="none"
+        android:background="@color/lightGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.prototype.wishti.custom_views.ComboBoxWithScrollViewItemsContainer
+            android:id="@+id/items_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/yellow_background_with_circle_corners_on_bottom">
+
+        <com.prototype.wishti.custom_views.TextViewWithFont
+            android:id="@+id/bottom_button"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            custom:ttf_file="Roboto-Regular.ttf" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prototype.wishti">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".WishtiApp_"
+        android:allowBackup="true"
+        android:icon="@drawable/wishti_app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="MainActivity" >
+
+        </activity>
+        <activity android:name=".activities.UserDetailsActivity_" >
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4de7170b950fafb7c87ed042ae92f737b41a6c83" />
+
+        <activity
+            android:name=".activities.FirstEntryActivity_"
+            android:label="@string/title_activity_first_entry" >
+        </activity>
+        <activity
+            android:name=".activities.CheckIfFirstEntry_"
+            android:label="@string/title_activity_first_entry" >
+        </activity>
+
+        <receiver
+            android:name=".broadcast_receivers.BootCompletedReceiver_"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.PusherNotificationService_" >
+        </service>
+
+        <activity
+            android:name=".activities.CreateUserProfileActivity_"
+            android:label="@string/title_activity_create_user_profile" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

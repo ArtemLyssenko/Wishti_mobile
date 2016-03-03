@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:background="@drawable/checkbox_with_arrow_gray_oval_border_background">
+
+    <View
+        android:id="@+id/check_mark"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/icon_checkmark_white"/>
+
+</RelativeLayout>

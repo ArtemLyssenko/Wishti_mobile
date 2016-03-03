@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together" android:duration="300">
+    <fade android:fadingMode="fade_out" />
+    <changeBounds>
+        <targets>
+            <target android:targetId="@+id/check_mark"/>
+        </targets>
+    </changeBounds>
+    <fade android:fadingMode="fade_in" />
+</transitionSet>

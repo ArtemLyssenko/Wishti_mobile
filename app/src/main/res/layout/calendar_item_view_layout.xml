@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="84dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.prototype.wishti.custom_views.TextViewWithFont
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:alpha="1.0"
+                android:textColor="@android:color/white" />
+
+            <com.prototype.wishti.custom_views.TextViewWithFont
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:alpha="1.0"
+                android:textColor="@android:color/white"  />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/background_chart"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0.15" />
+
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.prototype.wishti.custom_views.TextViewWithFont
+            android:id="@+id/previous_month"
+            android:textColor="@android:color/black"
+            android:alpha="0.4"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            custom:ttf_file="Roboto-Regular.ttf"
+            android:text="ИЮЛЬ"
+            />
+
+        <com.prototype.wishti.custom_views.TextViewWithFont
+            android:id="@+id/current_month"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            custom:ttf_file="Roboto-Regular.ttf"
+            android:text="АВГУСТ"
+            />
+
+        <com.prototype.wishti.custom_views.TextViewWithFont
+            android:id="@+id/next_month"
+            android:textColor="@android:color/black"
+            android:alpha="0.4"
+            android:layout_marginRight="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            custom:ttf_file="Roboto-Regular.ttf"
+            android:text="СЕНТЯБРЬ"
+            />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.prototype.wishti.custom_views.CalendarViewHorizontalItemsContainer
+            android:id="@+id/calendar_view_horizontal_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </HorizontalScrollView>
+</LinearLayout>
